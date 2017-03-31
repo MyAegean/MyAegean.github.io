@@ -6,7 +6,11 @@
 	<title data-i18n="head.title">MyAegean | heartbeat status</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+	
 	<link href="css/upscuits.min.css?rel=1.4.5" rel="stylesheet">
+	
+	<meta name="theme-color" content="#4B5B6A"> <meta name="msapplication-TileColor" content="#4B5B6A">
+	<meta name="robots" content="noindex, nofollow"> <meta name="robots" content="noodp, noydir"/>
 </head>
 
 <body>
@@ -14,7 +18,7 @@
 		<div class="jumbotron">
 			<!--h1><i class="icon-dashboard icon-red"></i> My.Aegean.gr <small data-i18n="head.subtitle">heartbeat</small></h1-->
 			<h1>
-				<a href="http://mytest.syros.aegean.gr" title="My.Aegean.gr heartbeat service"><img src="9dtde3cwo8f5.png" width="500" height="60" alt="My.Aegean.gr heartbeat service" title="My.Aegean.gr heartbeat service" /></a>
+				<a href="http://status.myaegean.gr" title="My.Aegean.gr heartbeat service"><img src="9dtde3cwo8f5.png" width="500" height="60" alt="My.Aegean.gr heartbeat service" title="My.Aegean.gr heartbeat service" /></a>
 			</h1>
 			<!--p data-i18n="head.hero">
 			</p-->
@@ -105,15 +109,43 @@
 			</div>
 		</div>
 
+		<div class="modal fade" id="modal-MyAegean-faq">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+							<h4 class="modal-title" data-i18n="modal-MyAegean-faq.title">What is MyAegean?</h4>
+						</div>
+					<div class="modal-body" data-i18n="[html]modal-MyAegean-faq.content">
+						<p>&quot;MyAegean&quot; is a non-profit voluntary initiative by students of the University of the Aegean. Also, a community portal, e-magazine &amp; forum. </p>
+						<p>Our aspiration is to create<strong> a vehicle which will encourage and promote direct, collective and qualitative communication and information exchange, without geographical restrictions, among all members of the University of the Aegean`s community</strong> and the local or broader communities and people who like to participate.</p>
+						<p><a href="https://medium.com/sea-drops/about-myaegean-78f55ef78794" target="_blank"><i class="icon-info-sign"></i> about MyAegean (medium.com)</a></p>
+						<p><a href="http://my.aegean.gr/web/about.html#ENabout" target="_blank"><i class="icon-info-sign"></i> about MyAegean (my.aegean.gr)</a></p>
+
+						
+					</div>
+					<div class="modal-footer">
+						<a href="#" class="btn btn-primary" data-dismiss="modal" data-i18n="close">close</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+
 		<!-- navigation bar -->
-		<div class="navbar navbar-inverse navbar-fixed-bottom">
+		<div class="navbar navbar-inverse navbar-fixed-bottom" style="background-color: #4B5B6A">
 			<div class="container">
 				<div class="navbar-header">
-					<a class="navbar-brand" href="#"><i class="icon-dashboard icon-red"></i> </a>
+					<a class="navbar-brand" href="#" data-toggle="modal" data-target="#modal-about"><i class="icon-dashboard icon-white"></i> <span data-i18n="nav.About">About this page</span></a>
 				</div>
 				<div class="navbar-collapse">
 					<ul class="nav navbar-nav">
-						<li><a href="#" data-toggle="modal" data-target="#modal-about"><i class="icon-info-sign"></i> <span data-i18n="nav.About">About</span></a></li>
+						<li><a href="#" data-toggle="modal" data-target="#modal-MyAegean-faq"><i class="icon-info-sign"></i> <span data-i18n="nav.About">About MyAegean</span></a></li>
+						
+						<li><a href="http://twitter.com/MyAegean" target="_blank"><i class="icon-twitter"></i> on Twitter</a></li>
+						<li><a href="http://facebook.com/MyAegean" target="_blank"><i class="icon-facebook"></i> on Facebook</a></li>
+
+
 						<!--
 						<li><a href="http://twitter.com/pixelbak" target="_blank"><i class="icon-twitter"></i> Pixelbak</a></li>
 						<li><a href="https://github.com/digibart/upscuits" target="_blank"><i class="icon-code-fork"></i> <span data-i18n="nav.Fork me">Fork me</span></a></li>
